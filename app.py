@@ -150,5 +150,5 @@ def favicon():
     return send_file("./public/favicon.ico")
 
 if __name__ == '__main__':
-    app.run(host=args.ip if args.ip != None else "localhost", port=args.port if args.port != None else 8000, debug=False)
+    app.run(host=args.ip if args.ip != None else "localhost", port=args.port if args.port != None else 8000, debug=True)
     
